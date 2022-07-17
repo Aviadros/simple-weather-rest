@@ -23,7 +23,8 @@
 (defroutes app-routes
   (GET "/" [] "Simple Weather API")
   (GET "/setup" [] (db/setup))
-  (GET "/:city" [city] (get-city-weather city)))
+  (context "/weather" []
+    (GET "/:city" [city] (get-city-weather city))))
 
 (def app
   (wrap-defaults app-routes site-defaults))
