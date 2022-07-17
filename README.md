@@ -3,7 +3,13 @@
 This simple weather app will send requests to [openweathermap][] to get the temperature for the requested city.
 The request will be saved to a PostgreSQL Database with the timestamp of the request.
 
-Requests need to be sent to http://localhost/weather
+Requests need to be sent to http://localhost/weather/{city} and will answer with a json in the Form of
+
+    {
+    "city": "Berlin",
+    "temperature": 22.43,
+    "datetime": "2022-07-17T20:21:13.721"
+    }
 
 [openweathermap]: https://api.openweathermap.org
 
