@@ -3,7 +3,7 @@
             [clojure.data.json :as json]
             [simple-weather-rest.db :as db]))
 
-(def ^{:private true} api-key "d0e239f15d5f56006808fd1cf63f968c")
+(def ^{:private true} api-key (System/getenv "API_KEY"))
 (def ^{:private true} weather-api-url "https://api.openweathermap.org/data/2.5/weather")
 (defn now [] (str (java.time.LocalDateTime/now)))
 

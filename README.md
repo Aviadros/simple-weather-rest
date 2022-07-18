@@ -31,6 +31,8 @@ the created PostgreSQL database will be running on localhost:5432 on the databas
 username: postgres
 password: password
 
+Set the Environment Variable "API_KEY" with the API key for openweathermap.org
+
 To start a web server for the application on port 3000, run:
 
-    lein ring server
+    lein ring server-headless

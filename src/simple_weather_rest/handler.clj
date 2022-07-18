@@ -21,7 +21,6 @@
           (response/content-type "application/json")))))
 
 (defroutes app-routes
-  (GET "/" [] "Simple Weather API")
   (GET "/setup" [] (db/setup))
   (context "/weather" []
     (GET "/:city" [city] (get-city-weather city))))
