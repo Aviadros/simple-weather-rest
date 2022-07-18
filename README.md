@@ -36,3 +36,9 @@ Set the Environment Variable "API_KEY" with the API key for openweathermap.org
 To start a web server for the application on port 3000, run:
 
     lein ring server-headless
+
+after running the application call
+
+    localhost:3000/setup
+
+once to setup the database for the application
