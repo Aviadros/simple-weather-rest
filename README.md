@@ -1,9 +1,9 @@
 # simple-weather-rest
 
 This simple weather app will send requests to [openweathermap][] to get the temperature for the requested city.
-The request will be saved to a PostgreSQL Database with the timestamp of the request.
+The request will be saved to a PostgreSQL database with the timestamp of the request.
 
-Requests need to be sent to http://localhost/weather/{city} and will answer with a json in the Form of
+Requests need to be sent to http://localhost:3000/weather/{city} and will answer with a json in the form of
 
     {
     "city": "Berlin",
